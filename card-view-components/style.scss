@@ -92,5 +92,6 @@ section {
 @media screen and (max-width:375px) {
     section {
         flex-direction: column;
+        width: 280px;
     }
 }
