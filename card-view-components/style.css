@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  background: #f2f2f2;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 700px;
+}
+
+section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+}
+
+section div h2 {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+}
+
+section div p {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11.5px;
+  margin-bottom: 40px;
+}
+
+section div a {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  background: #f2f2f2;
+  padding: 8px 20px;
+  border: 2.7px solid #f2f2f2;
+  border-radius: 20px;
+  font-size: 13.5px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+section div a:hover {
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.sedan__card {
+  background: #e38826;
+}
+
+.sedan__card a {
+  color: #e38826;
+}
+
+.suv__card {
+  background: #006970;
+}
+
+.suv__card a {
+  color: #006970;
+}
+
+.luxury__card {
+  background: #004241;
+}
+
+.luxury__card a {
+  color: #004241;
+}
+
+@media screen and (max-width: 375px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
