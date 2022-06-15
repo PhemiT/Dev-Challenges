@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+$ff: 'Manrope', sans-serif;
+$lgt-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+$neon-green-alpha: hsla(150, 100%, 66%, 0.8);
+$gray-blue: hsl(217, 19%, 38%);
+$dark-gray-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $dark-blue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $ff;
+}
+
+.advice__card {
+    background: $dark-gray-blue;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+
+    p[class="advice__number"] {
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $neon-green;
+    }
+
+    p[class="advice__text"] {
+        font-size: 28px;
+        font-weight: 800;
+        color: $lgt-cyan;
+        text-align: center;
+    }
+}
+
+.divider {
+    img[class="mobile__divider"] {
+        display: none;
+    }
+}
+
+.advice__dice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: $neon-green;
+    margin-bottom: -50px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 400ms ease;
+
+    img {
+        width: 45%;
+    }
+}
+
+.advice__dice:hover {
+    box-shadow: 0 5px 15px $neon-green-alpha;
+}
+
+@media screen and (max-width: 375px) {
+    .divider {
+        img[class="mobile__divider"] {
+            display: block;
+        }
+
+        img[class="desktop__divider"] {
+            display: none;
+        }
+    }
+
+    .advice__card {
+        width: 90%;
+    }
+}

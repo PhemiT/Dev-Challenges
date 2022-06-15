@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f2632;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.advice__card {
+  background: #323a49;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.advice__card p[class="advice__number"] {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #52ffa8;
+}
+
+.advice__card p[class="advice__text"] {
+  font-size: 28px;
+  font-weight: 800;
+  color: #cee3e9;
+  text-align: center;
+}
+
+.divider img[class="mobile__divider"] {
+  display: none;
+}
+
+.advice__dice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  margin-bottom: -50px;
+  margin-top: 25px;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.advice__dice img {
+  width: 45%;
+}
+
+.advice__dice:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(82, 255, 168, 0.8);
+          box-shadow: 0 5px 15px rgba(82, 255, 168, 0.8);
+}
+
+@media screen and (max-width: 375px) {
+  .divider img[class="mobile__divider"] {
+    display: block;
+  }
+  .divider img[class="desktop__divider"] {
+    display: none;
+  }
+  .advice__card {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
