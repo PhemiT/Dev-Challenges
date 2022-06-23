@@ -39,7 +39,7 @@ body {
   width: 40%;
 }
 
-.advice__card p[class="advice__number"] {
+.advice__card h1[class="advice__number"] {
   font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
@@ -80,7 +80,7 @@ body {
 }
 
 .advice__dice img {
-  width: 45%;
+  width: 55%;
 }
 
 .advice__dice:hover {
@@ -88,7 +88,7 @@ body {
           box-shadow: 0 5px 15px rgba(82, 255, 168, 0.8);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   .divider img[class="mobile__divider"] {
     display: block;
   }
