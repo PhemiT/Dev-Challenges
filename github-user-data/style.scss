@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600;700;800&display=swap');
+
+$bg-main: #141C2F;
+$bg-secondary: #1F2A48;
+$clr-blue: #0078FC;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: $bg-main;
+    color: #fff; 
+}
+
+.main-section {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div[class="header"] {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    div[class="search-bar"] {
+        width: 100%;
+        background-color: $bg-secondary;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 7px;
+        margin: 10px 0;
+        @extend div[class="header"];
+
+        ::placeholder {
+            color: #fff;
+        }
+
+        input {
+            width: 75%;
+            height: 100%;
+            background: $bg-secondary;
+            outline: none;
+            border: none;
+            color: #fff;
+        }
+
+        span {
+            color: $clr-blue;
+        }
+
+        button {
+            outline: none;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            padding: 10px 17px;
+            background: $clr-blue;
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+
+    div[class="user-card-component"] {
+        width: 100%;
+        height: 300px;
+        background: $bg-secondary;
+        border: 1px solid transparent;
+        border-radius: 10px;
+    }
+}
