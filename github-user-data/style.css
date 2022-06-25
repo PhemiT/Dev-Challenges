@@ -53,6 +53,27 @@ html {
   width: 100%;
 }
 
+.main-section div[class="header"] span[class="theme-changer"] span, .main-section div[class="search-bar"] span[class="theme-changer"] span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.main-section div[class="header"] span[class="theme-changer"] span p, .main-section div[class="search-bar"] span[class="theme-changer"] span p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.main-section div[class="header"] span[class="theme-changer"] span[id="dark"], .main-section div[class="search-bar"] span[class="theme-changer"] span[id="dark"] {
+  display: none;
+}
+
 .main-section div[class="search-bar"] {
   width: 100%;
   background-color: #1F2A48;
@@ -89,6 +110,7 @@ html {
 
 .main-section div[class="search-bar"] span {
   color: #0078FC;
+  margin-inline: 10px;
 }
 
 .main-section div[class="search-bar"] button {
@@ -107,5 +129,131 @@ html {
   background: #1F2A48;
   border: 1px solid transparent;
   border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  justify-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  padding: 25px;
+}
+
+.main-section div[class="user-card-component"] div {
+  width: 100%;
+}
+
+.main-section div[class="user-card-component"] div[class="user-avatar"], .main-section div[class="user-card-component"] div[class="user-avatar"] img {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] > span,
+.main-section div[class="user-card-component"] div[class="user-info"] > div {
+  width: 90%;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] span[class="user-info-header"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] span[class="user-info-header"] h4 {
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] span[class="user-info-header"] p {
+  font-size: 12px;
+  font-weight: 450;
+  color: #8c97ad;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] span[class="user-info-tag"] p {
+  font-size: 11.7px;
+  font-weight: 300;
+  color: #0078FC;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] span[class="user-info-bio"] p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8c97ad;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] div[class="user-info-stats"] {
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #141C2F;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] div[class="user-info-stats"] p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8c97ad;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] div[class="user-info-details"] {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] div[class="user-info-details"] > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] div[class="user-info-details"] > span span {
+  color: #fff;
+}
+
+.main-section div[class="user-card-component"] div[class="user-info"] div[class="user-info-details"] > span p {
+  font-size: 11.5px;
+  font-weight: 350;
+  color: #8c97ad;
 }
 /*# sourceMappingURL=style.css.map */

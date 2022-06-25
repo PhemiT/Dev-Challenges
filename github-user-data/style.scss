@@ -3,6 +3,8 @@
 $bg-main: #141C2F;
 $bg-secondary: #1F2A48;
 $clr-blue: #0078FC;
+$clr-grey: #8c97ad;
+$clr-white: #fff;
 
 * {
     margin: 0;
@@ -18,7 +20,7 @@ html {
     align-items: center;
     height: 100%;
     background-color: $bg-main;
-    color: #fff; 
+    color: $clr-white; 
 }
 
 .main-section {
@@ -33,6 +35,25 @@ html {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
+        span[class="theme-changer"] {
+            span {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                cursor: pointer;
+
+                p {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+
+            span[id="dark"] {
+                display: none;
+            }
+        }
     }
 
     div[class="search-bar"] {
@@ -45,7 +66,7 @@ html {
         @extend div[class="header"];
 
         ::placeholder {
-            color: #fff;
+            color: $clr-white;
         }
 
         input {
@@ -54,11 +75,12 @@ html {
             background: $bg-secondary;
             outline: none;
             border: none;
-            color: #fff;
+            color: $clr-white;
         }
 
         span {
             color: $clr-blue;
+            margin-inline: 10px;
         }
 
         button {
@@ -67,7 +89,7 @@ html {
             border-radius: 10px;
             padding: 10px 17px;
             background: $clr-blue;
-            color: #fff;
+            color: $clr-white;
             font-weight: 400;
         }
     }
@@ -78,5 +100,110 @@ html {
         background: $bg-secondary;
         border: 1px solid transparent;
         border-radius: 10px;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        justify-items: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px;
+
+        div {
+            width: 100%;
+        }
+
+        div[class="user-avatar"] {
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 50%;
+
+            img {
+                @extend div[class="user-avatar"];
+            }
+        }
+
+        div[class="user-info"]>span,
+        div[class="user-info"]>div {
+            width: 90%;
+        }
+
+        div[class="user-info"] {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+
+            span[class="user-info-header"] {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 450;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 450;
+                    color: $clr-grey;
+                }
+            }
+
+            span[class="user-info-tag"] {
+                p {
+                    font-size: 11.7px;
+                    font-weight: 300;
+                    color: $clr-blue;
+                }
+            }
+
+            span[class="user-info-bio"] {
+                p {
+                   font-size: 12px;
+                   font-weight: 400;
+                   color: $clr-grey;
+                }
+            }
+
+            div[class="user-info-stats"] {
+                padding: 8px 15px;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                background-color: $bg-main;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: flex-start;
+                align-items: flex-start;
+
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $clr-grey;
+                }
+            }
+
+            div[class="user-info-details"] {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: flex-start;
+                align-items: center;
+            }
+
+            div[class="user-info-details"]>span {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                span {
+                    color: $clr-white;
+                }
+
+                p {
+                    font-size: 11.5px;
+                    font-weight: 350;
+                    color: $clr-grey;
+                }
+            } 
+        }
     }
 }

@@ -13,22 +13,70 @@
         <div class="header">
             <h3>devfinder</h3>
             <span id="theme-changer" class="theme-changer">
-                test
+                <span id="light">
+                    <p>light</p>
+                    <i class="uil uil-sun"></i>
+                </span>
+                <span id="dark">
+                    <p>dark</p>
+                    <i class="uil uil-moon"></i>
+                </span>
             </span>
         </div>
 
         <div class="search-bar">
             <span><i class="uil uil-search"></i></span>
-            <input type="text" id="search-bar" class="search__bar-input" placeholder="Enter a Username...">
+            <input type="text" id="search-bar" class="search__bar-input" placeholder="Enter a Username..." onfocus="this.placeholder=''" >
             <button class="search-btn">Search</button>
         </div>
 
         <div class="user-card-component">
             <div class="user-avatar">
-
+                <img src="https://avatars.githubusercontent.com/u/99820898?v=4" alt="user-avatar">
             </div>
             <div class="user-info">
-                
+                <span class="user-info-header">
+                    <h4 id="user-name">Bukunmi</h4>
+                    <p id="user-join-date">Joined 16 Feb 2022</p>
+                </span>
+                <span class="user-info-tag">
+                    <p>@<span id="user-tag">PhemiT</span></p>
+                </span>
+                <span class="user-info-bio">
+                    <p id="user-bio">Front-end Developer • JavaScript ❤ • React.js • WordPress • I write sometimes</p>
+                </span>
+                <div class="user-info-stats">
+                    <span>
+                        <p>Repos</p>
+                        <h4 id="user-repos">18</h4>
+                    </span>
+                    <span>
+                        <p>Followers</p>
+                        <h4 id="user-followers">3</h4>
+                    </span>
+                    <span>
+                        <p>Following</p>
+                        <h4 id="user-following">0</h4>
+                    </span>
+                </div>
+                <div class="user-info-details">
+                    <span>
+                        <span><i class="uil uil-location-point"></i></span>
+                        <p id="user-location">null</p>
+                    </span>
+                    <span>
+                        <span><i class="uil uil-twitter"></i></span>
+                        <p id="user-twitter-tag">@phemi_t</p>
+                    </span>
+                    <span>
+                        <span><i class="uil uil-link"></i></span>
+                        <p id="user-website">null</p>
+                    </span>
+                    <span>
+                        <span><i class="uil uil-building"></i></span>
+                        <p id="user-organization">null</p>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
