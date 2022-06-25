@@ -27,58 +27,63 @@
         <div class="search-bar">
             <span><i class="uil uil-search"></i></span>
             <input type="text" id="search-bar" class="search__bar-input" placeholder="Enter a Username..." onfocus="this.placeholder=''" >
-            <button class="search-btn">Search</button>
+            <button class="search-btn" id="search-btn">Search</button>
         </div>
 
         <div class="user-card-component">
-            <div class="user-avatar">
-                <img src="https://avatars.githubusercontent.com/u/99820898?v=4" alt="user-avatar">
-            </div>
-            <div class="user-info">
-                <span class="user-info-header">
-                    <h4 id="user-name">Bukunmi</h4>
-                    <p id="user-join-date">Joined 16 Feb 2022</p>
-                </span>
-                <span class="user-info-tag">
-                    <p>@<span id="user-tag">PhemiT</span></p>
-                </span>
-                <span class="user-info-bio">
-                    <p id="user-bio">Front-end Developer • JavaScript ❤ • React.js • WordPress • I write sometimes</p>
-                </span>
-                <div class="user-info-stats">
-                    <span>
-                        <p>Repos</p>
-                        <h4 id="user-repos">18</h4>
-                    </span>
-                    <span>
-                        <p>Followers</p>
-                        <h4 id="user-followers">3</h4>
-                    </span>
-                    <span>
-                        <p>Following</p>
-                        <h4 id="user-following">0</h4>
-                    </span>
+            <p id="empty-field-text">Search a Username!</p>
+            <div class="user-card-component-details" id="user-card-component-details">
+                <div class="user-avatar">
+                    <img id="user-img" src="" alt="user-avatar">
                 </div>
-                <div class="user-info-details">
-                    <span>
-                        <span><i class="uil uil-location-point"></i></span>
-                        <p id="user-location">null</p>
+                <div class="user-info">
+                    <span class="user-info-header">
+                        <h4 id="user-name"></h4>
+                        <p id="user-join-date">Joined 16 Feb 2022</p>
                     </span>
-                    <span>
-                        <span><i class="uil uil-twitter"></i></span>
-                        <p id="user-twitter-tag">@phemi_t</p>
+                    <span class="user-info-tag">
+                        <p>@<span id="user-tag"></span></p>
                     </span>
-                    <span>
-                        <span><i class="uil uil-link"></i></span>
-                        <p id="user-website">null</p>
+                    <span class="user-info-bio">
+                        <p id="user-bio"></p>
                     </span>
-                    <span>
-                        <span><i class="uil uil-building"></i></span>
-                        <p id="user-organization">null</p>
-                    </span>
+                    <div class="user-info-stats">
+                        <span>
+                            <p>Repos</p>
+                            <h4 id="user-repos"></h4>
+                        </span>
+                        <span>
+                            <p>Followers</p>
+                            <h4 id="user-followers"></h4>
+                        </span>
+                        <span>
+                            <p>Following</p>
+                            <h4 id="user-following"></h4>
+                        </span>
+                    </div>
+                    <div class="user-info-details">
+                        <span>
+                            <span><i class="uil uil-location-point"></i></span>
+                            <p id="user-location"></p>
+                        </span>
+                        <span>
+                            <span><i class="uil uil-twitter"></i></span>
+                            <p id="user-twitter-tag"></p>
+                        </span>
+                        <span>
+                            <span><i class="uil uil-link"></i></span>
+                            <p id="user-website"></p>
+                        </span>
+                        <span>
+                            <span><i class="uil uil-building"></i></span>
+                            <p id="user-organization"></p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>

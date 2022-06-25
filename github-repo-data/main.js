@@ -8,8 +8,6 @@ const getRepoData = async() => {
     let response = await fetch(`https://api.github.com/users/${searchInput.value}/repos`)
     let repoData = await response.json()
 
-    console.log(repoData)
-
     const repoRender = (repo) =>  { return (`
         <div key=${repo.id} class="repo-box">
             <h1 class="repo-title">${repo.name}</h1>
