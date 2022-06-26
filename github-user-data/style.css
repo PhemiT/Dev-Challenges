@@ -19,6 +19,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  width: 100%;
   background-color: #141C2F;
   color: #fff;
 }
@@ -149,7 +150,7 @@ html {
 }
 
 .main-section div[class="user-card-component"] > p {
-  font-size: 15px;
+  font-size: 13.5px;
   font-style: italic;
   font-weight: 300;
   color: #8c97ad;
@@ -282,5 +283,70 @@ html {
   font-size: 11.5px;
   font-weight: 350;
   color: #8c97ad;
+}
+
+.lightTheme {
+  background-color: #fff;
+  color: #000;
+}
+
+.lightTheme .main-section div[class="header"] span[id="dark"], .lightTheme .main-section div[class="search-bar"] span[id="dark"] {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  color: #8c97ad;
+}
+
+.lightTheme .main-section div[class="header"] span[id="light"], .lightTheme .main-section div[class="search-bar"] span[id="light"] {
+  display: none;
+}
+
+.lightTheme div[class="search-bar"] {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.lightTheme div[class="search-bar"] input {
+  background-color: #fff;
+  color: #8c97ad;
+}
+
+.lightTheme div[class="search-bar"] ::-webkit-input-placeholder {
+  color: #8c97ad;
+}
+
+.lightTheme div[class="search-bar"] :-ms-input-placeholder {
+  color: #8c97ad;
+}
+
+.lightTheme div[class="search-bar"] ::-ms-input-placeholder {
+  color: #8c97ad;
+}
+
+.lightTheme div[class="search-bar"] ::placeholder {
+  color: #8c97ad;
+}
+
+.lightTheme div[class="user-card-component"] {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.lightTheme div[class="user-card-component-details"] div[class="user-info"] div[class="user-info-details"] > span span {
+  color: #8c97ad;
+}
+
+.lightTheme div[class="user-card-component-details"] div[class="user-info"] div[class="user-info-stats"] {
+  background-color: #0078FC;
+}
+
+.lightTheme div[class="user-card-component-details"] div[class="user-info"] div[class="user-info-stats"] h4 {
+  color: #fff;
+}
+
+.lightTheme div[class="user-card-component-details"] div[class="user-info"] div[class="user-info-stats"] p {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

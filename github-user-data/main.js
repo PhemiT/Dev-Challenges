@@ -16,26 +16,40 @@ const userInfo = {
 }
 const userCardComponent = document.getElementById("user-card-component-details")
 const emptyField = document.getElementById("empty-field-text")
+const notFound = "unavailable"
+const themeChanger = document.getElementById("theme-changer")
+const darkTheme = document.getElementById("dark")
+const bodyClass = document.body.classList
+
+
+
 
 const getRepoData = async() => {
     let response = await fetch(`https://api.github.com/users/${searchInput.value}`)
     let repoData = await response.json()
 
-    userInfo.userName.innerHTML = repoData.name;
+
+    // update DOM
+    userInfo.userName.innerHTML = repoData.name?repoData.name:notFound
     userInfo.userTag.innerHTML = repoData.login;
-    userInfo.userBio.innerHTML = repoData.bio;
+    userInfo.userBio.innerHTML = repoData.bio?repoData.bio:notFound
     userInfo.userRepos.innerHTML = repoData.public_repos;
     userInfo.userFollowers.innerHTML = repoData.followers;
     userInfo.userFollowing.innerHTML = repoData.following;
-    userInfo.userLocation.innerHTML = repoData.location;
-    userInfo.userTwitterTag.innerHTML = repoData.twitter_username;
-    userInfo.userWebsite.innerHTML = repoData.blog;
-    userInfo.userOrganization.innerHTML = repoData.company;
+    userInfo.userLocation.innerHTML = repoData.location?repoData.location:notFound
+    userInfo.userTwitterTag.innerHTML = repoData.twitter_username?repoData.twitter_username:notFound
+    userInfo.userWebsite.innerHTML = repoData.blog?repoData.blog:notFound
+    userInfo.userOrganization.innerHTML = repoData.company?repoData.company:notFound
     userInfo.userImg.src = repoData.avatar_url
-
-    console.log(repoData.login)
+    userInfo.userJoinDate.innerHTML = `Joined ${repoData.created_at.slice(0, 10)}`
     emptyField.style.display = "none"
     userCardComponent.style.display = "grid"
 }
 
 searchBtn.addEventListener("click", getRepoData)
+
+const changeTheme = () => {
+    bodyClass.toggle("lightTheme")
+}
+
+themeChanger.addEventListener("click", changeTheme)

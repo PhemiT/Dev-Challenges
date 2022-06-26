@@ -5,6 +5,7 @@ $bg-secondary: #1F2A48;
 $clr-blue: #0078FC;
 $clr-grey: #8c97ad;
 $clr-white: #fff;
+$clr-black: #000;
 
 * {
     margin: 0;
@@ -19,6 +20,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
     background-color: $bg-main;
     color: $clr-white; 
 }
@@ -109,7 +111,7 @@ html {
     }
 
     div[class="user-card-component"]>p {
-        font-size: 15px;
+        font-size: 13.5px;
         font-style: italic;
         font-weight: 300;
         color: $clr-grey;
@@ -220,6 +222,69 @@ html {
                     color: $clr-grey;
                 }
             } 
+        }
+    }
+}
+
+.lightTheme {
+    background-color: $clr-white;
+    color: $clr-black;
+
+    .main-section {
+        div[class="header"] {
+            
+            span[id="dark"] {
+                display: flex !important;
+                color: $clr-grey;
+            }
+
+            span[id="light"] {
+                display: none;
+            }
+
+        }
+    }
+
+    div[class="search-bar"] {
+        background-color: $clr-white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        input {
+            background-color: $clr-white;
+            color: $clr-grey;
+        }
+
+        ::placeholder {
+            color: $clr-grey;
+        }
+    }
+
+    div[class="user-card-component"] {
+        background-color: $clr-white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    div[class="user-card-component-details"] {
+
+        div[class="user-info"] {
+
+            div[class="user-info-details"]>span {
+                span {
+                    color: $clr-grey;
+                }
+            }
+
+            div[class="user-info-stats"] {
+                background-color: $clr-blue;
+
+                h4 {
+                    color: $clr-white;
+                }
+
+                p {
+                    color: $clr-white;
+                }
+            }
         }
     }
 }
