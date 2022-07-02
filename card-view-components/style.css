@@ -101,7 +101,7 @@ section div a:hover {
   color: #004241;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

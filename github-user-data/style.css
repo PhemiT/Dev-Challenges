@@ -349,4 +349,10 @@ html {
 .lightTheme div[class="user-card-component-details"] div[class="user-info"] div[class="user-info-stats"] p {
   color: #fff;
 }
+
+@media screen and (max-width: 550px) {
+  .main-section {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
